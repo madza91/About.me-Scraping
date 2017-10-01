@@ -1,7 +1,11 @@
 # About.me-Scraping
 Get all user info from About.me
+
 ## Installation
-Just clone it, and run project root folder.
+- Clone it
+- Edit init/config.php
+    - Set your google maps API key
+- Run and explore About.me users :-)
 
 ## Description
 This is very simple web-scraping tool, which you can get all user data from About.me website.
@@ -14,6 +18,9 @@ Also, this tool has simple templates with very basic design made for simple exam
 
 ## Requirements
 * PHP
+
+## Helpful links
+* [Demo page](https://goo.gl/ppaxYM)
 
 ## What is about.me?
 About.me - Your personal homepage.
