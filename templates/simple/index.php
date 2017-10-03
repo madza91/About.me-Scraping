@@ -62,6 +62,16 @@
                             <div class="col-sm-5 col-xs-6 tital" >Website:</div><div class="col-sm-7"><a href="<?= $website['url']; ?>" target="_blank"><?= $website['text']; ?></a></div>
                             <?php endif; ?>
 
+                            <?php if($user['apps']): ?>
+                                <div class="clearfix"></div>
+                                <div class="bot-border"></div>
+                                <div class="col-sm-5 col-xs-6 tital" >Social profiles:</div><div class="col-sm-7">
+                                    <?php foreach($user['apps'] as $app): ?>
+                                      <a href="<?= $app['site_url']; ?>" title="<?= $app['platform']; ?>" target="_blank"><img class="well-sm" src="<?= getWebsiteFavicon($app['site_url']); ?>"></img></a>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
+
                             <?php if($interests): ?>
                             <div class="clearfix"></div>
                             <div class="bot-border"></div>

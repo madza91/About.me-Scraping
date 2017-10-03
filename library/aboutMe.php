@@ -170,6 +170,26 @@ function getURLContent($url)
 }
 
 /**
+ * Get favicon from any domain
+ * @param $url
+ * @return string
+ */
+function getWebsiteFavicon($url) {
+
+  $base = 'https://www.google.com/s2/favicons?domain=';
+
+  $parsedUrl = parse_url($url);
+
+  if (!isset($parsedUrl['host'])) {
+    $domain = $url;
+  } else {
+    $domain = $parsedUrl['host'];
+  }
+
+  return $base . $domain;
+}
+
+/**
  * Dump and Die
  * @param $variable
  */
